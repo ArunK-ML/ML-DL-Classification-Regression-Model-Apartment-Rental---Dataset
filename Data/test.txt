@@ -1,0 +1,33 @@
+Typically, in an apartment rental dataset, the important fields are:
+
+🏷 price → continuous numeric variable → (for regression)
+
+📍 city / location → categorical variable (if you want classification, e.g., predict city from features)
+
+🏢 number of bedrooms / bathrooms → features
+
+📏 size (sqft) → feature
+
+📝 description → text data (feature, not usually the target)
+
+So:
+
+If your task is predicting rent amount → the target column = price.
+
+If your task is predicting category (e.g., furnished/unfurnished, city, etc.) → the target would be that specific column.
+
+| Column Name     | Data Type           | Description                                                    |
+| --------------- | ------------------- | -------------------------------------------------------------- |
+| **id**          | Integer             | Unique identifier for each listing.                            |
+| **url**         | String (Text)       | Link to the listing website.                                   |
+| **title**       | String (Text)       | Title of the listing ad (e.g., “2 BHK Apartment in Downtown”). |
+| **description** | String (Text)       | Full text description of the property.                         |
+| **price**       | Numeric (Float/Int) | Rental price (Target column if predicting rent).               |
+| **currency**    | String (Text)       | Currency type (e.g., USD, EUR).                                |
+| **city**        | String (Text)       | City where the apartment is located.                           |
+| **date**        | Date                | Date when the listing was posted.                              |
+| **bedrooms**    | Integer             | Number of bedrooms.                                            |
+| **bathrooms**   | Integer             | Number of bathrooms.                                           |
+| **size\_sqft**  | Numeric             | Apartment size in square feet.                                 |
+| **amenities**   | String/List         | Amenities provided (pool, parking, etc.).                      |
+| **furnished**   | Categorical         | Whether the apartment is furnished or not.                     |
